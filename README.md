@@ -1,5 +1,5 @@
 # Ajax Chat
-Ajax Chat for phpbb 3.1
+Ajax Chat for phpbb 3.1 and 3.2
 
 [![Build Status](https://travis-ci.org/LMOspaceace/ajaxchat.svg?branch=master)](https://travis-ci.org/LMOspaceace/ajaxchat)
 
