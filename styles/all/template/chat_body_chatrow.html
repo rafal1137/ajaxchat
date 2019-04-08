@@ -29,13 +29,13 @@
 					{% else %}
 						&#64;
 					{% endif %}
-					{{ chatrow.USERNAME_FULL }}&nbsp;<b class="chat-time">&laquo;&nbsp;{{ chatrow.TIME }}&nbsp;&raquo;</b>
+					{{ chatrow.USERNAME_FULL }}
 				</div>
 			</div>
 			{{ SMILIES_PATH }}
 			<div class="message">
 				{% INCLUDE 'chatrow_message_icons.html' %}
-				{{ chatrow.MESSAGE }}
+				{{ chatrow.MESSAGE }}<b class="chat-time">{{ chatrow.TIME }}</b>
 			</div>
 		</div>
 	</div>

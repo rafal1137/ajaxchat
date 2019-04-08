@@ -205,6 +205,7 @@
 }
 
 .chat-time {
+	float: right;
 	font-size: 0.9em;
 }
 
@@ -587,7 +588,6 @@ div.chat-avatars:hover span {
 
 .original {
 	padding: 8px 10px;
-	margin-bottom: 4px;
 }
 
 .nomargin {
