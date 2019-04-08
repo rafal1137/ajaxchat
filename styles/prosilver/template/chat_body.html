@@ -14,23 +14,6 @@
 			{% INCLUDEJS '@spaceace_ajaxchat/js/ajax_chat.js' %}
 			{% EVENT spaceace_ajax_chat_chat_body_before %}
 			<div id="ajaxchat">
-				<div class="forabg">
-					<div class="inner">
-						<ul class="topiclist">
-							<li class="header">
-								<dl class="row-item">
-									<dt><div class="chat-header-link">{% if SCRIPT_NAME == 'index' %}<a href="{{ U_CHAT }}">{{ lang('CHAT_EXPLAIN') }}</a>{% else %}{{ lang('CHAT_EXPLAIN') }}{% endif %}</div></dt>
-									<dd></dd>
-								</dl>
-							</li>
-						</ul>
-						{% if CHAT_PAGE neq 'archive' %}
-							{% if S_AJAX_CHAT_MESSAGES_DOWN %}
-								{% INCLUDE 'chat_body_input.html' %}
-							{% endif %}
-						{% endif %}
-					</div>
-				</div>
 					{% if CHAT_RULES and CHAT_PAGE neq 'archive' %}
 						{% INCLUDE 'chat_body_chat_rules.html' %}
 					{% endif %}
@@ -50,6 +33,23 @@
 							</div>
 						</div>
 					{% endif %}
+				</div>
+				<div class="forabg">
+					<div class="inner">
+						<ul class="topiclist">
+							<li class="header">
+								<dl class="row-item">
+									<dt><div class="chat-header-link">{% if SCRIPT_NAME == 'index' %}<a href="{{ U_CHAT }}">{{ lang('CHAT_EXPLAIN') }}</a>{% else %}{{ lang('CHAT_EXPLAIN') }}{% endif %}</div></dt>
+									<dd></dd>
+								</dl>
+							</li>
+						</ul>
+						{% if CHAT_PAGE neq 'archive' %}
+							{% if S_AJAX_CHAT_MESSAGES_DOWN %}
+								{% INCLUDE 'chat_body_input.html' %}
+							{% endif %}
+						{% endif %}
+					</div>
 				</div>
 				<div class="chatnavbar navbar">
 					{% if CHAT_PAGE neq 'archive' %}
