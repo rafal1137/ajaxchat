@@ -261,6 +261,10 @@ div.chat-avatars:hover span {
 	width: 300px;
 }
 
+#ajaxchat #background {
+	background: url('./images/demo.png');
+}
+
 .top-pad {
 	padding-top: 2px;
 }
