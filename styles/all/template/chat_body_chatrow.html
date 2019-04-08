@@ -22,9 +22,9 @@
 				<div class="chat-usernames">
 					{% if not S_IS_BOT and S_USER_LOGGED_IN and CHAT_PAGE neq 'archive' %}
 						{% if chatrow.USER_COLOR %}
-							<a href="#" style="color: #{{ chatrow.USER_COLOR }}" onclick="insert_text('[color=#{{ chatrow.USER_COLOR }}][b]&#64;{{ chatrow.USERNAME_A }}[/b][/color],&nbsp;', true);return false;" title="{{ lang('RESPOND') }}">&#64;</a>
+							<a href="#" style="color: #{{ chatrow.USER_COLOR }}" onclick="insert_text('[color=#{{ chatrow.USER_COLOR }}][b]{{ chatrow.USERNAME_A }}[/b][/color],&nbsp;', true);return false;" title="{{ lang('RESPOND') }}"></a>
 						{% else %}
-							<a href="#" onclick="insert_text('[b]&#64;{{ chatrow.USERNAME_A }}[/b],&nbsp;', true);return false;" title="{{ lang('RESPOND') }}">&#64;</a>
+							<a href="#" onclick="insert_text('[b]&#64;{{ chatrow.USERNAME_A }}[/b],&nbsp;', true);return false;" title="{{ lang('RESPOND') }}"></a>
 						{% endif %}
 					{% else %}
 						&#64;
